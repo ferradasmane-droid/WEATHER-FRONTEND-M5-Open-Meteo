@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+
+.about {
+    max-width: 1100px;
+    margin: auto;
+
+    &__title {
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    &__content {
+        border-radius: $radius-md;
+        padding: 2rem;
+        background-color: $color-white;
+        box-shadow: 0 4px rgba(0, 0, 0, 0.08);
+    }
+
+    &__text {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    }
+}

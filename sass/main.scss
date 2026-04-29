@@ -1,0 +1,17 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/base';
+
+@use 'components/cards';
+@use 'components/navbar';
+
+@use 'layout/header';
+@use 'layout/content';
+@use 'layout/footer';
+
+@use 'pages/home';
+@use 'pages/detalle';
+@use 'pages/about';
+
+@use 'themes/theme';
+

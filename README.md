@@ -1,21 +1,22 @@
-# 🌦️ App de Clima Frontend - M2
-# Descripción
-Este proyecto corresponde al desarrollo de una aplicación web del clima en su versión inicial (MVP), realizada como parte del Módulo 2 de Frontend.
+# 🌦️ App de Clima Frontend - M3
+
+## 📌 Descripción
+Este proyecto corresponde al desarrollo de una aplicación web del clima en su versión inicial (MVP), reestructurada en el Módulo 3.
 
 La aplicación permite visualizar información básica del clima actual y acceder a un detalle con datos mas completos de distintas ciudades.
+En esta versión se mejora la interfaz, organización del código y estilos, aplicando buenas prácticas de desarrollo frontend.
 
-## Objetivo
+## 🎯 Objetivo
 
 El objetivo de este proyecto es aplicar conocimientos de:
 
-- HTML5semántico
--Bootstrap para diseño responsive.
-
-- CSS para personalización de estilos.
-
+- HTML5 semántico
+- Bootstrap para diseño responsive.
+- CSS con preprocesador SASS
+- Metodología BEM para organización de estilos.
 - Git y GitHub para control de versiones.
 
-## Funcionalidades
+## ⚙️ Funcionalidades
 
 - ✅ Lista de cuidades con clima actual
 - ✅ Vista de detalle por cuidad
@@ -26,33 +27,101 @@ El objetivo de este proyecto es aplicar conocimientos de:
 - ✅ Navegación entre páginas (Home, Detalle, Acerca de)
 - ✅ Diseño responsive
 
-##  Tecnologías utilizadas
+##  🧠 Metodología de estilos
 
+Se utilizó la metodología **BEM (Block Elemment Modifier)** para organizar las clases Css, por ejemplo:
+
+- `.weather-app__header`
+- `.weather-app__main`
+- `.place-card`
+- `.place-card__temp`
+
+Esto permite un código mas ordenado, escalable y mantenible.
+
+## 🎨 Estructura SASS
+
+Se implementó una arquitectura basada en el patrón **7-1**, separando los estilos en parciales:
+
+```markdown
+```bash
+sass/
+│
+├── 📁 abstracts/
+│   ├── _variables.scss
+│   └── _mixins.scss
+│
+├── 📁 base/
+│   ├── _reset.scss
+│   └── _base.scss
+│
+├── 📁 components/
+│   ├── _cards.scss
+│   ├── _navbar.scss
+│   └── _button.scss
+│
+├── 📁 layout/
+│   ├── _header.scss
+│   ├── _footer.scss
+│   └── _content.scss
+│
+├── 📁 pages/
+│   ├── _home.scss
+│   ├── _detalle.scss
+│   └── _about.scss
+│
+├── 📁 themes/
+│   └── _theme.scss
+│
+└── main.scss
+```
+
+Cada carpeta cumple una función específica:
+
+- **abstracts**: variables y mixins
+- **base**: estilos globales
+- **components**: elementos reutilizables
+- **layout**: estructura general
+- **pages**: estilos por página
+
+### Características utilizadas
+
+- Variables (colores, tamaños, transiciones)
+- Anidaciones (nesting)
+- Mixins (por ejemplo, efectos hover)
+
+
+
+## Tecnologías utilizadas
 - HTML5
 - CSS3
-Bootstrap 5
+- SASS (SCSS)
+- Bootstrap 5
 - Git / GitHub
 
-## Cómo usar
 
-1️⃣ Abrir la aplicación desde el navegador:
+## 🚀 Cómo usar
 
-2️⃣ Navega por las ciudades disponibles en la pagina 
-principal.
+1️⃣ Abrir el proyecto en el navegador (index.html)
 
-3️⃣ Navega entre páginas:
+2️⃣ Navegar por las ciudades disponibles
 
-- Usar el menú superior (Home, Detalle, Acerca de)
-- Utilizar el botón "volver" para regresar al inicio.
+3️⃣ Acceder al detalle de cada ciudad
+
+4️⃣ Usar el menú para moverse entre páginas
+
+## Responsividad
+
+- 📱 Móvil: card en una sola columna
+- 💻 Escritorio: múltiples columnas con Bootstrap grid
 
 
-## 🚫 Nota
-Este proyecto fue desarrollado sin JavaScript, centrandose en la estructura 
-del contenido y la navegación entre páginas, según los requerimientos del módulo.
-o
+## ℹ️ Nota 
 
-### Nelly Ferrada
-Proyecto desarrollado como parte de formación en desarrollo Frontend M2.
+Este proyecto fue desarrollado sin uso de JavaScript adicional, enfocandose en la estructura, estilos y navegación.
+
+## 👩‍💻 Autora
+Nelly Ferrada
+
 
 ## 🔗 Enlaces
 

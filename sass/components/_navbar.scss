@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as *;
+
+.nav-link {
+    color: $color-white;
+    transition: all $transition-fast;
+    display: inline-block;
+
+    &:hover {
+        transform: translateY(2px);
+        color: $color-hover;
+    }
+}
+
+.weather-app__brand {
+    font-weight: bold;
+}

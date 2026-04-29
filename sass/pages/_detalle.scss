@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+.weather-detail {
+    &__image {
+    max-width: $weather-detail-image-max;
+    width: 100%;
+    height: auto;
+    border-radius: $radius-sm;
+}
+
+&__forecast-img {
+    width: 100%;
+    height: $forecast-image-height;
+    object-fit: contain;
+    padding: 10px;
+}
+
+    &__temp,
+    &__temperature {
+        font-weight: bold;
+    }
+ }

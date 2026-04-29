@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
+.card {
+    border-radius: $radius-md;
+
+    @include hover-scale;
+}
+
+.place-card {
+    border-radius: $radius-md;
+    p { 
+     padding-left: 20px;
+     padding-right: 20px;
+   }
+}
+
+.card-clima {
+    background-color: $color-card-clima;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+}
+

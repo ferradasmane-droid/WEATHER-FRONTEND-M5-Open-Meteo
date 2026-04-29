@@ -1,0 +1,10 @@
+@use 'variables' as *;
+
+@mixin hover-scale {
+    transition: $transition-normal;
+    
+    &:hover {
+        transform: scale(1.02);
+        
+    }
+}
