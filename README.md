@@ -42,7 +42,7 @@ Esto permite un código mas ordenado, escalable y mantenible.
 
 Se implementó una arquitectura basada en el patrón **7-1**, separando los estilos en parciales:
 
-```markdown
+
 ```bash
 sass/
 │
@@ -85,9 +85,9 @@ Cada carpeta cumple una función específica:
 
 ### Características utilizadas
 
-- Variables (colores, tamaños, transiciones)
-- Anidaciones (nesting)
-- Mixins (por ejemplo, efectos hover)
+- **Variables**: (colores, tamaños, transiciones)
+- **Anidaciones (nesting)**: permite organizar los estilos dentro de un mismo bloque, siguiendo la estructura del HTML, mejorando la legibilidad y mantenimiento del código.
+- **Mixins**: (por ejemplo, efectos hover)
 
 
 
@@ -127,5 +127,5 @@ Nelly Ferrada
 
 - 🌐 Sitio web:  https://ferradasmane-droid.github.io/WEATHER_FRONTEND_M3/
 
-- 💻 Repositorio: 
+- 💻 Repositorio: https://github.com/ferradasmane-droid/WEATHER_FRONTEND_M3
 
