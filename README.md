@@ -35,6 +35,9 @@ Se utilizó la metodología **BEM (Block Element Modifier)** para organizar las 
 - `.weather-app__main`
 - `.place-card`
 - `.place-card__temp`
+- `.place-card__button`
+- `.place-card__button--primary`
+- `.weather-detail__card--nublado`
 
 Esto permite un código más ordenado, escalable y mantenible.
 
