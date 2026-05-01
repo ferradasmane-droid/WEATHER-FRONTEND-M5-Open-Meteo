@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as *;
+
+.place-card__button {
+    margin-top: auto;
+    padding: 8px 16px;
+    border-radius: $radius-sm;
+    text-decoration: none;
+    width: auto;
+    align-self: center;
+
+    &--primary {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-hover;
+            color: $color-white;
+        }
+    }
+}

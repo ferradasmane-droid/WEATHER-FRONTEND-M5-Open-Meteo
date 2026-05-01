@@ -12,9 +12,8 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
-    
-      <header class="weather-app__header text-white text-center">
+  <body class="Weather-app">
+      <header class="weather-app__header">
         <h1>Acerca del proyecto</h1>
         <p class="weather-app__subtitle">Información del proyecto</p>
       </header>
@@ -37,29 +36,28 @@
 </nav>
       <main class="weather-app__main container my-5">
         <section class="about">
-          <h2 class="about__title text-center">🌦️ Acerca del Proyecto</h2>
+          <h2 class="about__title text-center">🌦️ Sobre la aplicación</h2>
           <div class="about__content card shadow-sm border-0">
             <p class="about__text">
               Este proyecto corresponde al desarrollo de una aplicación web del
-              clima en su versión inicial, realizada como finalización del
-              módulo 2 de Frontend.
+              clima en su versión mejorada (M3), como continuación del módulo de frontend.
             </p>
             <p class="about__text">
               Su propósito es mostrar información del clima actual y el
-              pronóstico semanal de distintas ciudades de interés, utilizando
-              HTML5 semántico, Bootstrap para el diseño responsivo y CSS para la
-              personalización de estilos.
+              pronóstico de distintas ciudades, utilizando HTML5 semántico, Bootstrap
+              para el diseño responsivo y SASS para la organización y personalización de estilos.
             </p>
             <p class="about__text">
-              La aplicación permite visualizar una lista de ciudades con
-              información básica del clima y acceder a un detalle donde se
-              muestran datos como temperatura, humedad, viento y pronóstico
-              semanal.
+              En esta versión se incorporó el uso de la metodología BEM para estructurar las clases 
+              CSS, además de variables y mixins en SASS que permiten un código más ordenado, reutilizable y mantenible.
             </p>
             <p class="about__text">
-              Esta versión fue desarrollado sin el uso de JavaScript, dando
-              prioridad a la ejecución de la estructura del contenido y
-              navegación entre páginas.
+              La aplicación permite visualizar una lista de ciudades con información básica del clima 
+              y acceder a un detalle donde se muestran datos como temperatura, estado del clima y otras condiciones relevantes.
+              También se mejoró la experiencia visual mediante el uso de efectos hover, diseño más consistente en tarjetas y 
+              navegación más clara entre páginas.
+              Este proyecto representa una evolución hacia buenas prácticas de desarrollo frontend, enfocadas en 
+              la organización del código y la escalabilidad.
             </p>
           </div>
         </section>

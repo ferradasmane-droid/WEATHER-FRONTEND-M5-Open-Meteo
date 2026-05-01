@@ -6,7 +6,27 @@
     width: 100%;
     height: auto;
     border-radius: $radius-sm;
-}
+   }  
+   &--soleado {
+    border: 2px solid orange;
+    background-color: #fff7cc;
+   }
+
+   &--ventoso {
+    border: 2px solid #74c0fc;
+    background-color: #e7f5ff;
+   }
+
+   &--lluvia {
+    border: 2px solid blue;
+    background-color: #e7f1ff;
+   }
+
+   &--nublado {
+    border: 2px solid #adb5bd;
+    background-color: #f8f9fa;
+   }
+
 
 &__forecast-img {
     width: 100%;
@@ -18,5 +38,31 @@
     &__temp,
     &__temperature {
         font-weight: bold;
+    }
+ }
+
+ .weather-detail__card {
+    border-radius: $radius-md;
+
+    &--parcial {
+        background-color: #fff3cd;
+        border: 1px solid #ffe08a;
+
+    }
+
+    &--soleado {
+        background-color: #fff7cc;
+    }
+
+    &--lluvia {
+        background-color: #e7f1ff;
+    }
+
+    &--nublado {
+        background-color: #f8f9fa;
+    }
+
+    &--ventoso {
+        background-color: #e7f5ff;
     }
  }

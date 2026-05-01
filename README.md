@@ -79,7 +79,7 @@ Cada carpeta cumple una función específica:
 
 - **abstracts**: variables y mixins
 - **base**: estilos globales
-- **components**: elementos reutilizables
+- **components**: elementos reutilizables como cards, botones y navbar
 - **layout**: estructura general
 - **pages**: estilos por página
 
@@ -87,7 +87,9 @@ Cada carpeta cumple una función específica:
 
 - **Variables**: (colores, tamaños, transiciones)
 - **Anidaciones (nesting)**: permite organizar los estilos dentro de un mismo bloque, siguiendo la estructura del HTML, mejorando la legibilidad y mantenimiento del código.
-- **Mixins**: (por ejemplo, efectos hover)
+- **Mixins**: reutilización de estilos(por ejemplo,efectos hover) 
+- **Metodología BEM**: organización de clase mediante bloques, elementos y modificadores para un código más claro y escalable
+- **Componentes reutilizables**: uso de elementos como cards, botones y navbar que permiten mantener un diseño consistente en toda la aplicación.
 
 
 

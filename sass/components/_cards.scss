@@ -10,10 +10,38 @@
 
 .place-card {
     border-radius: $radius-md;
+
     p { 
      padding-left: 20px;
      padding-right: 20px;
    }
+
+   &--soleado {
+    border: 2px solid orange;
+    background-color: #fff7cc;
+   }
+
+   &--ventoso {
+    border: 2px solid #74c0fc;
+    background-color: #e7f5ff;
+   }
+
+   &--lluvia {
+    border: 2px solid blue;
+    background-color: #e7f1ff;
+   }
+
+   &--nublado {
+    border: 2px solid #adb5bd;
+    background-color: #f8f9fa;
+   }
+}
+
+.place-card__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
 }
 
 .card-clima {

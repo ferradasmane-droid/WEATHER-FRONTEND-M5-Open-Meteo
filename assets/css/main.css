@@ -21,6 +21,29 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
+.place-card--soleado {
+  border: 2px solid orange;
+  background-color: #fff7cc;
+}
+.place-card--ventoso {
+  border: 2px solid #74c0fc;
+  background-color: #e7f5ff;
+}
+.place-card--lluvia {
+  border: 2px solid blue;
+  background-color: #e7f1ff;
+}
+.place-card--nublado {
+  border: 2px solid #adb5bd;
+  background-color: #f8f9fa;
+}
+
+.place-card__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
 
 .card-clima {
   background-color: #e3f2fd;
@@ -75,6 +98,22 @@ a {
   height: auto;
   border-radius: 10px;
 }
+.weather-detail--soleado {
+  border: 2px solid orange;
+  background-color: #fff7cc;
+}
+.weather-detail--ventoso {
+  border: 2px solid #74c0fc;
+  background-color: #e7f5ff;
+}
+.weather-detail--lluvia {
+  border: 2px solid blue;
+  background-color: #e7f1ff;
+}
+.weather-detail--nublado {
+  border: 2px solid #adb5bd;
+  background-color: #f8f9fa;
+}
 .weather-detail__forecast-img {
   width: 100%;
   height: 180px;
@@ -83,6 +122,26 @@ a {
 }
 .weather-detail__temp, .weather-detail__temperature {
   font-weight: bold;
+}
+
+.weather-detail__card {
+  border-radius: 12px;
+}
+.weather-detail__card--parcial {
+  background-color: #fff3cd;
+  border: 1px solid #ffe08a;
+}
+.weather-detail__card--soleado {
+  background-color: #fff7cc;
+}
+.weather-detail__card--lluvia {
+  background-color: #e7f1ff;
+}
+.weather-detail__card--nublado {
+  background-color: #f8f9fa;
+}
+.weather-detail__card--ventoso {
+  background-color: #e7f5ff;
 }
 
 .about {
