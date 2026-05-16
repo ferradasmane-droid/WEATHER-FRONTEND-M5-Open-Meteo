@@ -3,14 +3,14 @@
 ## 📌 Descripción
 Este proyecto corresponde al desarrollo de una aplicación web del clima en su versión M4, enfocada en la lógica y estadísticas utilizando JavaScript.
 
-La aplicación muestra información climatica de distintas comunas de Chiloé, permitiendo visualizar el clima actual, el pronóstico semanal y estadísticas generadas dinámicamnete desde JavaScript.
+La aplicación muestra información climática de distintas comunas de Chiloé, permitiendo visualizar el clima actual, el pronóstico semanal y estadísticas generadas dinámicamente desde JavaScript.
 
 En esta versión se trabajó principalmente:
 - Modelado de datos con arreglos y objetos.
 - Manipulación del DOM.
 - Uso de funciones, ciclos y condicionales.
 - Generación dinámica de estadísticas semanales.
-- Navegación entre vistas Home y Detalle.
+- Navegación dinámica entre páginas Home, Detalle y Acerca.
 
 ## 🎯 Objetivo
 
@@ -108,7 +108,7 @@ Utilizados para:
 
 # 🎨 Metodología de estilos
 
-Se utilizó metodoligía BEM (Block Element Modifer).
+Se utilizó metodología BEM (Block Element Modifier).
 
 Ejemplos:
 
@@ -182,22 +182,18 @@ Cada carpeta cumple una función específica:
 
 # 📱 Características del proyecto
 
-- Diseño responsive.
-- Pronóstico semanal dinámico.
-- Estadísticas calculadas con JavaScript.
-- Uso de clases dinámicas según clima.
-- Navegación entre páginas.
-- Código modular y reutilizable.
-- Organización de estilos con arquitectura SASS 7-1.
-- Uso de metodología BEM.
-- Componentes reutilizables.
-
+- Diseño responsive
+- Pronóstico dinámico semanal
+- Estadísticas automáticas
+- Navegación dinámica entre páginas
+- Componentes reutilizables
+- Arquitectura SASS 7-1.
 
 # 🚀 Cómo usar
 
 1️⃣ Clonar o descargar el repositorio
 
-2️⃣ Abrir `ìndex.html`.
+2️⃣ Abrir `index.html`.
 
 3️⃣ Navegar entre las ciudades.
 
@@ -206,9 +202,9 @@ Cada carpeta cumple una función específica:
 
 # 🔗 Enlaces
 
-- 💻 Repositorio: https://github.com/ferradasmane-droid/WEATHER-FRONTEND-M4.git
+- 💻 Repositorio: [Ver en GitHub](https://github.com/ferradasmane-droid/WEATHER-FRONTEND-M4)
 
-- 🌐 Sitio web: https://ferradasmane-droid.github.io/WEATHER-FRONTEND-M4/
+- 🌐 Sitio web: [Abrir Weather](App https://ferradasmane-droid.github.io/WEATHER-FRONTEND-M4/)
 
 
 

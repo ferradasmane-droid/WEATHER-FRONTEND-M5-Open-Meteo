@@ -415,7 +415,7 @@ function mostrarAcerca() {
      </h2>
   
         <p class="about-app__description text-center fs-5">
-         Weather App es una aplicación desarrollada para mostra el clima actual,
+         Weather App es una aplicación desarrollada para mostrar el clima actual,
          el pronóstico semanal y estadísticas de distintas ciudades de Chiloé.
         </p>
 
