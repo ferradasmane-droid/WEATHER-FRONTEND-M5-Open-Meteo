@@ -11,6 +11,10 @@
     border: 2px solid orange;
     background-color: #fff7cc;
    }
+    &--parcial {
+        background-color: #fff3cd;
+        border: 2px solid #ffe08a;
+    }
 
    &--ventoso {
     border: 2px solid #74c0fc;
@@ -46,8 +50,7 @@
 
     &--parcial {
         background-color: #fff3cd;
-        border: 1px solid #ffe08a;
-
+        border: 2px solid #ffe08a;
     }
 
     &--soleado {
@@ -65,4 +68,23 @@
     &--ventoso {
         background-color: #e7f5ff;
     }
- }
+
+}
+
+.weather-stat-card {
+        background: linear-gradient(135deg, #f8fbff, #eef4ff);
+        border: 1px solid #dbe7ff;
+        border-radius: 18px;
+        transition: $transition-normal;
+        
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        }
+    }
+    
+    .weather-summary-card {
+        background-color: #fcfcfd;
+        border: 1px solid #e8e8e8;
+        border-radius: 18px;
+    }

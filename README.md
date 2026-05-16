@@ -1,50 +1,125 @@
-# 🌦️ App de Clima Frontend - M3
+# 🌦️ App de Clima Frontend - M4
 
 ## 📌 Descripción
-Este proyecto corresponde al desarrollo de una aplicación web del clima en su versión inicial (MVP), reestructurada en el Módulo 3.
+Este proyecto corresponde al desarrollo de una aplicación web del clima en su versión M4, enfocada en la lógica y estadísticas utilizando JavaScript.
 
-La aplicación permite visualizar información básica del clima actual y acceder a un detalle con datos más completos de distintas ciudades.
-En esta versión se mejora la interfaz, organización del código y estilos. El proyecto sigue buenas prácticas de organización y escalabilidad en desarrollo frontend.
+La aplicación muestra información climatica de distintas comunas de Chiloé, permitiendo visualizar el clima actual, el pronóstico semanal y estadísticas generadas dinámicamnete desde JavaScript.
+
+En esta versión se trabajó principalmente:
+- Modelado de datos con arreglos y objetos.
+- Manipulación del DOM.
+- Uso de funciones, ciclos y condicionales.
+- Generación dinámica de estadísticas semanales.
+- Navegación entre vistas Home y Detalle.
 
 ## 🎯 Objetivo
 
 El objetivo de este proyecto es aplicar conocimientos de:
 
 - HTML5 semántico
-- Bootstrap para diseño responsive.
-- CSS con preprocesador SASS
-- Metodología BEM para organización de estilos.
-- Git y GitHub para control de versiones.
+- Bootstrap 5
+- CSS3 y SASS
+- Metodología BEM
+- JavaScript
+- Manipulación del DOM
+- Git y GitHub
 
 ## ⚙️ Funcionalidades
 
-- ✅ Lista de ciudades con clima actual
-- ✅ Vista de detalle por ciudad
-- ✅ Información de:
-  - Temperatura
-  - Humedad
-  - Viento
-- ✅ Navegación entre páginas (Home, Detalle, Acerca de)
-- ✅ Diseño responsive
+## ✅ Home
+- Lista dinámica de lugares.
+- Cards generadas desde JavaScript.
+- Visualización del clima actual.
+- Estilos dinámicos según el tipo de clima.
+- Navegación hacia la vista de detalles.
 
-##  🧠 Metodología de estilos
+## ✅ Vista detalle
+- Imagen dinámica de cada ciudad.
+- Temperatura actual.
+- Estado actual del clima.
+- Pronóstico semanal completo.
 
-Se utilizó la metodología **BEM (Block Element Modifier)** para organizar las clases CSS, por ejemplo:
+## ✅ Estadísticas semanales
+La aplicación calcula automáticamente:
 
-- `.weather-app__header`
-- `.weather-app__main`
-- `.place-card`
-- `.place-card__temp`
-- `.place-card__button`
-- `.place-card__button--primary`
-- `.weather-detail__card--nublado`
+- Temperatura mínima.
+- Temperatura máxima.
+- Temperatura promedio.
+- Cantidad de días por tipo de clima.
+- Resumen textual dinámico
 
-Esto permite un código más ordenado, escalable y mantenible.
+Ejemplos:
+- "Se espera una semana mayormente soleada."
+- "Se espera una semana fría con varias lluvias."
+- "Se espera una semana con clima variable."
 
-## 🎨 Estructura SASS
+# 🧠 Lógica implementada en JavaScript
 
-Se implementó una arquitectura basada en el patrón **7-1**, separando los estilos en parciales:
+## 📦 Modelado de datos
 
+Los datos fueron estructurados utilizando un arreglo de objetos:
+```js
+const lugares = [
+  {
+    id: 1,
+    nombre: "Ancud"
+    tempActual: "Nublado",
+    
+    pronosticoSemanal: [
+      {dia: "Lunes", min: 8, max: 13, estado: "Parcial"},
+      {dia: "Martes", min: 9, max: 14, estado: "Soleado"}
+    ]
+  }
+];
+```
+
+# 🔄 Funciones principales
+
+## buscarLugarPorId(id)
+Busca y retorna un lugar según su ID.
+
+## calcularEstadisticas(pronostico)
+Calcula:
+- mínima
+- máxima
+- promedio
+- conteo de estados
+- resumen textual
+
+## mostrarHome()
+
+Genera dinámicamente las cards del Home utilizando `innerHTML`.
+
+## mostrarDetalle()
+
+Genera la vista detalle y las estadísticas dinámicamente.
+
+# 🔁 Ciclos y condicionales utilizados
+
+## Ciclos
+
+- `for...of`
+- `for...in`
+
+Utilizados para:
+- calcular estadísticas
+- evaluar tipos de clima
+- generar resúmenes automáticos
+
+#🎨 Metodología de estilos
+
+Se utilizó metodoligía BEM (Block Element Modifer).
+
+Ejemplos:
+
+```css
+.place-card
+.place-card__title
+.place-card--soleado
+.weather-detail__card
+```
+
+# 🧩 Estructura SASS
 
 ```bash
 sass/
@@ -86,7 +161,7 @@ Cada carpeta cumple una función específica:
 - **layout**: estructura general
 - **pages**: estilos por página
 
-### Características utilizadas
+## 🏗️ Metodologías utilizadas
 
 - **Variables**: (colores, tamaños, transiciones)
 - **Anidaciones (nesting)**: permite organizar los estilos dentro de un mismo bloque, siguiendo la estructura del HTML, mejorando la legibilidad y mantenimiento del código.
@@ -95,41 +170,55 @@ Cada carpeta cumple una función específica:
 - **Componentes reutilizables**: uso de elementos como cards, botones y navbar que permiten mantener un diseño consistente en toda la aplicación.
 
 
+# 🛠️ Tecnologías utilizadas
 
-## Tecnologías utilizadas
 - HTML5
 - CSS3
-- SASS (SCSS)
+- SASS 
 - Bootstrap 5
-- Git / GitHub
+- JavaScript
+- Git 
+- GitHub
+
+# 📱 Características del proyecto
+
+- Diseño responsive.
+- Pronóstico semanal dinámico.
+- Estadísticas calculadas con JavaScript.
+- Uso de clases dinámicas según clima.
+- Navegación entre páginas.
+- Código modular y reutilizable.
+- Organización de estilos con arquitectura SASS 7-1.
+- Uso de metodología BEM.
+- Componentes reutilizables.
 
 
-## 🚀 Cómo usar
+# 🚀 Cómo usar
 
-1️⃣ Abrir el proyecto en el navegador (index.html)
+1️⃣ Clonar o descargar el repositorio
 
-2️⃣ Navegar por las ciudades disponibles
+2️⃣ Abrir `ìndex.html`.
 
-3️⃣ Acceder al detalle de cada ciudad
+3️⃣ Navegar entre las ciudades.
 
-4️⃣ Usar el menú para moverse entre páginas
-
-## Responsividad
-
-- 📱 Móvil: card en una sola columna
-- 💻 Escritorio: múltiples columnas con Bootstrap grid
+4️⃣ Visualizar estadísticas dinámicas.
 
 
-## ℹ️ Nota 
+# 🔗 Repositorio GitHub
 
-Este proyecto fue desarrollado sin uso de JavaScript adicional, priorizando HTML, CSS y SASS.
 
-## 👩‍💻 Autora
-Nelly Ferrada
+```md
+[Ver repositorio] (LINK_AQUI)
+```
+
+
+
+# 👩‍💻 Autor
+
+Proyecto desarrollado por Nelly Ferrada para el Bootcamp Frontend.
 
 
 ## 🔗 Enlaces
-
 
 - 🌐 Sitio web:  https://ferradasmane-droid.github.io/WEATHER_FRONTEND_M3/
 

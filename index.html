@@ -18,7 +18,7 @@
     <nav class="weather-app__nav navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="weather-app__brand navbar-brand" href="index.html"
-          >🌦️ Clima_M3</a
+          >🌦️ Clima_M4</a
         >
         <button
           class="weather-app__toggler navbar-toggler"
@@ -31,9 +31,17 @@
 
         <div class="collapse navbar-collapse" id="menu">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link weather-app__link active" href="index.html">Home</a>
-            <a class="nav-link weather-app__link" href="detalle.html#ancud">Detalle</a>
-            <a class="nav-link weather-app__link" href="acerca.html">Acerca de</a>
+            <a class="nav-link weather-app__link active" href="index.html"
+              >Home</a
+            >
+            <a
+              class="nav-link weather-app__link"
+              href="detalle.html?id=${lugar.id}"
+              >Detalle</a
+            >
+            <a class="nav-link weather-app__link" href="acerca.html"
+              >Acerca de</a
+            >
           </div>
         </div>
       </div>
@@ -42,163 +50,12 @@
     <main class="weather-app__main container my-5">
       <h2 class="weather-app__title text-center mb-4">Ciudades</h2>
       <section class="weather-app__places">
-        <div class="row g-4">
-          <!--Ancud-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--nublado card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Ancud</h3>
-                <p class="place-card__temperature">14°C</p>
-                <p class="place-card__status">Nublado</p>
-                <a
-                  href="detalle.html#ancud"
-                  class="place-card__button place-card__button--primary btn btn-primary "
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Castro-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--lluvia card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Castro</h3>
-                <p class="place-card__temperature">12°C</p>
-                <p class="place-card__status ">Lluvia</p>
-                <a
-                  href="detalle.html#castro"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Quellón-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-car place-card--nublado card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Quellón</h3>
-                <p class="place-card__temperature">11°C</p>
-                <p class="place-card__status">Nublado</p>
-                <a
-                  href="detalle.html#quellon"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Quemchi-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--ventoso card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Quemchi</h3>
-                <p class="place-card__temperature">10°C</p>
-                <p class="place-card__status">Ventoso</p>
-                <a
-                  href="detalle.html#quemchi"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Chonchi-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--soleado card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Chonchi</h3>
-                <p class="place-card__temperature">15°C</p>
-                <p class="place-card__status">Soleado</p>
-                <a
-                  href="detalle.html#chonchi"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Dalcahue-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--nublado card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Dalcahue</h3>
-                <p class="place-card__temperature">12°C</p>
-                <p class="place-card__status">Nublado</p>
-                <a
-                  href="detalle.html#dalcahue"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Curaco de Vélez-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--lluvia card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Curaco de Vélez</h3>
-                <p class="place-temperature">10°C</p>
-                <p class="place-card__status">Lluvia</p>
-                <a
-                  href="detalle.html#curaco-de-velez"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Puqueldón-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--soleado card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Puqueldón</h3>
-                <p class="place-card__temperature">11°C</p>
-                <p class="place-card__status">Soleado</p>
-                <a
-                  href="detalle.html#puqueldon"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Quinchao-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--ventoso card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Quinchao</h3>
-                <p class="place-card__temperature">16°C</p>
-                <p class="place-card__statut">Ventoso</p>
-                <a
-                  href="detalle.html#quinchao"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-          <!--Queilén-->
-          <article class="col-12 col-sm-6 col-lg-4 mb-4">
-            <div class="place-card place-card--soleado card h-100 text-center shadow-sm">
-              <div class="place-card__body card-body">
-                <h3 class="place-card__title">Queilén</h3>
-                <p class="place-card__temperature">17°C</p>
-                <p class="place-card__status">Soleado</p>
-                <a
-                  href="detalle.html#queilen"
-                  class="place-card__button place-card__button--primary btn btn-primary"
-                  >Ver detalle</a
-                >
-              </div>
-            </div>
-          </article>
-        </div>
+        <div id="lista-lugares" class="row g-4"></div>
       </section>
-    </main> 
+    </main>
 
     <footer class="weather-app__footer text-center">
-      <p>© 2026 - App del Clima Versión M3</p>
+      <p>© 2026 - App del Clima Versión M4</p>
     </footer>
 
     <script
@@ -206,5 +63,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

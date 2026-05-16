@@ -21,6 +21,11 @@
     background-color: #fff7cc;
    }
 
+   &--parcial {
+        background-color: #fff3cd;
+        border: 2px solid #ffe08a;
+    }
+    
    &--ventoso {
     border: 2px solid #74c0fc;
     background-color: #e7f5ff;
@@ -46,7 +51,7 @@
 
 .card-clima {
     background-color: $color-card-clima;
-    border: 1px solid $color-border;
+    border: 2px solid $color-border;
     border-radius: $radius-md;
 }
 
