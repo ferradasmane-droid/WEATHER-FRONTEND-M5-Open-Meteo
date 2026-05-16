@@ -206,9 +206,9 @@ Cada carpeta cumple una función específica:
 
 # 🔗 Enlaces
 
-- 💻 https://github.com/ferradasmane-droid/WEATHER-FRONTEND-M4.git
+- 💻 Repositorio: https://github.com/ferradasmane-droid/WEATHER-FRONTEND-M4.git
 
-- 🌐 https://ferradasmane-droid.github.io/WEATHER-FRONTEND-M4/
+- 🌐 Sitio web: https://ferradasmane-droid.github.io/WEATHER-FRONTEND-M4/
 
 
 
