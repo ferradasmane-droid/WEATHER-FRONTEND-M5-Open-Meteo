@@ -219,9 +219,9 @@ sass --watsch sass/main.scss assets/css/main.css
 
 # 🔗 Enlaces
 
-- 💻 Repositorio: [Ver en GitHub](https://github.com/ferradasmane-droid/WEATHER-FRONTEND-M4)
+- 💻 Repositorio: [Ver en GitHub](https://github.com/ferradasmane-droid/WEATHER-FRONTEND-M5-Open-Meteo.git)
 
-- 🌐 Sitio web: [Abrir Weather App](https://ferradasmane-droid.github.io/WEATHER-FRONTEND-M4/)
+- 🌐 Sitio web: [Abrir Weather App](https://ferradasmane-droid.github.io/WEATHER-FRONTEND-M5-Open-Meteo/)
 
 
 # 👩‍💻 Autor
