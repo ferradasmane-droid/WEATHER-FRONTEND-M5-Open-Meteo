@@ -79,6 +79,35 @@ a {
   font-weight: bold;
 }
 
+.place-card__button {
+  margin-top: auto;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: auto;
+  align-self: center;
+}
+.place-card__button--primary {
+  background-color: #3b6ef5;
+  color: #ffffff;
+}
+.place-card__button--primary:hover {
+  background-color: #cfe2ff;
+  color: #ffffff;
+}
+
+.weather-app .btn-primary {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+.weather-app .btn-primary:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+.weather-app .btn-primary:active {
+  transform: scale(0.96);
+}
+
 .weather-app__header {
   text-align: center;
 }
@@ -169,6 +198,44 @@ a {
   border-radius: 18px;
 }
 
+.clima-soleado {
+  background: #fff3cd;
+  border: 2px solid #ffe69c;
+}
+
+.clima-parcial {
+  background: #e2f0ff;
+  border: 2px solid #b6d4fe;
+}
+
+.clima-nublado {
+  background: #e9ecef;
+  border: 2px solid #ced4da;
+}
+
+.clima-lluvia {
+  background: #dbeafe;
+  border: 2px solid #93c5fd;
+}
+
+.clima-variable {
+  background: #f3e8ff;
+  border: 2px solid #d8b4fe;
+}
+
+.img-clima {
+  display: inline-block;
+  animation: mover 5s linear infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(-120px);
+  }
+  100% {
+    transform: translateX(120px);
+  }
+}
 .about {
   max-width: 1100px;
   margin: auto;
@@ -195,6 +262,48 @@ a {
 }
 .about-list li {
   text-align: left;
+}
+
+.about-app {
+  background: linear-gradient(135deg, #eef4ff, #dbeafe);
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.about-app h2 {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.about-app p {
+  color: #374151;
+}
+
+.about-app .card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 170px;
+}
+
+.about-app .card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.18);
+}
+
+.about-app .list-group-item {
+  background: transparent;
+}
+
+.about-app .btn-primary {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  border: none;
+  border-radius: 14px;
+  padding: 0.8rem 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

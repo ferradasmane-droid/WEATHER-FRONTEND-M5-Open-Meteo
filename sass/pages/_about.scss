@@ -30,3 +30,45 @@
         text-align: left;
     }
 }
+
+.about-app {
+    background: linear-gradient(135deg, #eef4ff, #dbeafe);
+    border-radius: 24px;
+    padding: 2rem;
+}
+
+.about-app h2 {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.about-app p {
+    color: #374151;
+}
+
+.about-app .card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: all .3s ease;
+    min-height: 170px;
+}
+
+.about-app .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(37, 99, 235,0.18);
+}
+
+.about-app .list-group-item {
+    background: transparent;
+}
+
+.about-app .btn-primary {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    border: none;
+    border-radius: 14px;
+    padding: .8rem 2rem;
+}

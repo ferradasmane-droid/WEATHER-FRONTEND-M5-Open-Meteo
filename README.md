@@ -1,16 +1,17 @@
-# 🌦️ App de Clima Frontend - M4
+# 🌦️ App de Clima Frontend - M5 Open Meteo
 
 ## 📌 Descripción
-Este proyecto corresponde al desarrollo de una aplicación web del clima en su versión M4, enfocada en la lógica y estadísticas utilizando JavaScript.
+Este proyecto corresponde al desarrollo de una aplicación web del clima en su versión M5, enfocada en el consumo de API externa utilizando JavaScript.
 
-La aplicación muestra información climática de distintas comunas de Chiloé, permitiendo visualizar el clima actual, el pronóstico semanal y estadísticas generadas dinámicamente desde JavaScript.
+La aplicación muestra información climática de distintas comunas de Chiloé, permitiendo visualizar el clima actual, el pronóstico semanal y estadísticas generadas dinámicamente desde datos obtenidos desde la API Open-Meteo.
 
 En esta versión se trabajó principalmente:
-- Modelado de datos con arreglos y objetos.
-- Manipulación del DOM.
-- Uso de funciones, ciclos y condicionales.
-- Generación dinámica de estadísticas semanales.
+- Consumo de API externa con fetch.
+- Uso de async/await.
+- Programación Orientada a Objetos (POO).
+- Estadísticas automáticas semanales.
 - Navegación dinámica entre páginas Home, Detalle y Acerca.
+- Integración de animaciones y estilos dinámicos.
 
 ## 🎯 Objetivo
 
@@ -20,24 +21,26 @@ El objetivo de este proyecto es aplicar conocimientos de:
 - Bootstrap 5
 - CSS3 y SASS
 - Metodología BEM
-- JavaScript
+- JavaScript ES6+
 - Manipulación del DOM
+- Programación Orientada a Objetos
 - Git y GitHub
 
 ## ⚙️ Funcionalidades
 
 ## ✅ Home
-- Lista dinámica de lugares.
+- Lista dinámica de ciudades.
 - Cards generadas desde JavaScript.
-- Visualización del clima actual.
-- Estilos dinámicos según el tipo de clima.
-- Navegación hacia la vista de detalles.
+- Información climática obtenida desde API.
+- Estilos dinámicos según el clima.
+- Navegación hacia vista detalle.
 
 ## ✅ Vista detalle
-- Imagen dinámica de cada ciudad.
+- Imagen dinámica según clima.
 - Temperatura actual.
 - Estado actual del clima.
 - Pronóstico semanal completo.
+- Resumen climático automático.
 
 ## ✅ Estadísticas semanales
 La aplicación calcula automáticamente:
@@ -50,61 +53,71 @@ La aplicación calcula automáticamente:
 
 Ejemplos:
 - "Se espera una semana mayormente soleada."
-- "Se espera una semana fría con varias lluvias."
+- "Se espera una semana lluviosa."
 - "Se espera una semana con clima variable."
+
+## Consumo de API
+La aplicación obtiene datos desde:
+
+[Open-Meteo](https://open-meteo.com)
+
+Utilizando:
+```js
+fetch()
+async / await
+try / catch
+```
 
 # 🧠 Lógica implementada en JavaScript
 
 ## 📦 Modelado de datos
+Se utilizaron:
 
-Los datos fueron estructurados utilizando un arreglo de objetos:
-```js
-const lugares = [
-  {
-    id: 1,
-    nombre: "Ancud"
-    tempActual: "Nublado",
-    
-    pronosticoSemanal: [
-      {dia: "Lunes", min: 8, max: 13, estado: "Parcial"},
-      {dia: "Martes", min: 9, max: 14, estado: "Soleado"}
-    ]
-  }
-];
-```
+- Clases
+- Arreglos
+- Objetos
+- Métodos dinámicos
 
 # 🔄 Funciones principales
 
-## buscarLugarPorId(id)
-Busca y retorna un lugar según su ID.
+## iniciar()
 
-## calcularEstadisticas(pronostico)
+Inicializa la aplicación y carga ciudades dinámicamente.
+
+## obtenerDatosClima()
+
+Consume datos desde Open-Meteo.
+
+## crearCard()
+
+Genera dinámicamente las cards del Home.
+
+## cargarDetalle()
+
+Renderiza la vista detalle y estadísticas.
+
+## calcularEstadisticas()
+
 Calcula:
 - mínima
 - máxima
 - promedio
 - conteo de estados
-- resumen textual
+- resumen semanal
 
-## mostrarHome()
-
-Genera dinámicamente las cards del Home utilizando `innerHTML`.
-
-## mostrarDetalle()
-
-Genera la vista detalle y las estadísticas dinámicamente.
 
 # 🔁 Ciclos y condicionales utilizados
 
 ## Ciclos
 
+- `for`
 - `for...of`
 - `for...in`
 
 Utilizados para:
+- recorrer pronósticos
 - calcular estadísticas
-- evaluar tipos de clima
-- generar resúmenes automáticos
+- generar contenido dinámico
 
 # 🎨 Metodología de estilos
 
@@ -119,7 +132,7 @@ Ejemplos:
 .weather-detail__card
 ```
 
-# 🧩 Estructura SASS
+# 🧩 Arquitectura SASS 7-1
 
 ```bash
 sass/
@@ -176,7 +189,7 @@ Cada carpeta cumple una función específica:
 - CSS3
 - SASS 
 - Bootstrap 5
-- JavaScript
+- JavaScript ES6+
 - Git 
 - GitHub
 
@@ -184,21 +197,25 @@ Cada carpeta cumple una función específica:
 
 - Diseño responsive
 - Pronóstico dinámico semanal
+-Consume de API externa
 - Estadísticas automáticas
 - Navegación dinámica entre páginas
+- Animaciones CSS
 - Componentes reutilizables
-- Arquitectura SASS 7-1.
 
 # 🚀 Cómo usar
 
-1️⃣ Clonar o descargar el repositorio
+1️⃣ Clonar o descargar el repositorio.
 
-2️⃣ Abrir `index.html`.
+2️⃣ Abrir el proyecto en Visual Studio Code.
 
-3️⃣ Navegar entre las ciudades.
+3️⃣ Ejecutar Live Server.
 
-4️⃣ Visualizar estadísticas dinámicas.
+4️⃣ Compilar Sass:
 
+```bash
+sass --watsch sass/main.scss assets/css/main.css
+```
 
 # 🔗 Enlaces
 

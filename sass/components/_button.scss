@@ -18,3 +18,20 @@
         }
     }
 }
+
+.weather-app .btn-primary {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+
+
+&:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);    
+}
+
+&:active {
+    transform: scale(0.96);
+}
+}
+
+

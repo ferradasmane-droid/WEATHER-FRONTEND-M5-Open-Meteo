@@ -88,3 +88,44 @@
         border: 1px solid #e8e8e8;
         border-radius: 18px;
     }
+
+    .clima-soleado {
+        background: #fff3cd;
+        border: 2px solid #ffe69c;
+    }
+
+    .clima-parcial {
+        background: #e2f0ff;
+        border: 2px solid #b6d4fe;
+    }
+
+    .clima-nublado {
+        background: #e9ecef;
+        border: 2px solid #ced4da;
+    }
+
+    .clima-lluvia {
+        background: #dbeafe;
+        border: 2px solid #93c5fd;
+    }
+
+    .clima-variable {
+        background: #f3e8ff;
+        border: 2px solid #d8b4fe;
+    }
+
+    .img-clima {
+        display: inline-block;
+        animation: mover 5s linear infinite alternate;
+    }
+
+    @keyframes mover {
+        0% {
+            transform: translateX(-120px);
+        }
+        
+        100% {
+            transform: translateX(120px);
+        }
+    }
+
