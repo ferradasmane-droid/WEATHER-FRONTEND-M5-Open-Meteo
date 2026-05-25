@@ -268,7 +268,7 @@ class WeatherApp {
       }
 
       contenedorDetalle.innerHTML = `
-  <div class="card p-4 shadow-sm text-center">
+  <div class="card p-4 shadow-sm text-center weather-detail__card ${this.obtenerClaseClima(detalle.codigoClima)}">
   <h2>${detalle.nombre}</h2>
   
   <img src="${detalle.imagen}" alt="${detalle.nombre}" class="img-fluid rounded shadow mb-4 weather-detail__image d-block mx-auto"/>
