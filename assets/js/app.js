@@ -191,8 +191,8 @@ class WeatherApp {
         <div class="card-body">
          <h3 class="place-card__title">${lugar.nombre}</h3>
          <p class="place-card__temperature fs-3 fw-bold">${lugar.tempActual} °C</p>
-         <p><strong>Máxima:</strong> ${lugar.maxima}°C</p>
          <p><strong>Mínima:</strong> ${lugar.minima}°C</p>
+         <p><strong>Máxima:</strong> ${lugar.maxima}°C</p>
          <P><strong>Estado:</strong> ${this.obtenerDescripcionClima(lugar.codigoClima)}</P> 
          
          <a href="detalle.html?id=${lugar.id}" class="btn btn-primary">
@@ -243,10 +243,12 @@ class WeatherApp {
         class="img-clima img-fluid mb-3"
         width="100"
         />
+        
         <p><strong>Mínima:</strong> ${minima}°C</p>
         <p><strong>Máxima</strong> ${maxima}°C</p>
         <p><strong>Estado:</strong> ${this.obtenerDescripcionClima(codigoClima)}</p>
-        
+      
+
         </div>
        </div>
        </article>
@@ -265,9 +267,9 @@ class WeatherApp {
   <strong>${estadisticas.conteoEstados[estado]} días</strong>
   </li>
   `;
-      }
+}
 
-      contenedorDetalle.innerHTML = `
+  contenedorDetalle.innerHTML = `
   <div class="card p-4 shadow-sm text-center weather-detail__card ${this.obtenerClaseClima(detalle.codigoClima)}">
   <h2>${detalle.nombre}</h2>
   
@@ -276,8 +278,8 @@ class WeatherApp {
   <h3>${detalle.tempActual}°C</h3>
 
   
-  <p><strong>Máxima:</strong> ${detalle.maxima}°C</p>
   <p><strong>Mínima:</strong> ${detalle.minima}°C</p>
+  <p><strong>Máxima:</strong> ${detalle.maxima}°C</p>
   <p><strong>Estado:</strong> ${this.obtenerDescripcionClima(detalle.codigoClima)}</p>
 
  
