@@ -11,63 +11,63 @@ const lugaresBase = [
     nombre: "Castro",
     latitud: -42.4721,
     longitud: -73.7732,
-    imagen: "assets/img/castro.jpg",
+    imagen: "assets/img/castro.jpg"
   },
   {
     id: 3,
     nombre: "Quellón",
     latitud: -43.1182,
     longitud: -73.6166,
-    imagen: "assets/img/quellón.jpg",
+    imagen: "assets/img/quellón.jpg"
   },
   {
     id: 4,
     nombre: "Quemchi",
     latitud: -42.15,
     longitud: -73.4833,
-    imagen: "assets/img/quemchi.jpg",
+    imagen: "assets/img/quemchi.jpg"
   },
   {
     id: 5,
     nombre: "Chonchi",
     latitud: -42.6239,
     longitud: -73.775,
-    imagen: "assets/img/chonchi.jpg",
+    imagen: "assets/img/chonchi.jpg"
   },
   {
     id: 6,
     nombre: "Dalcahue",
     latitud: -42.3785,
     longitud: -73.6501,
-    imagen: "assets/img/dalcahue.jpg",
+    imagen: "assets/img/dalcahue.jpg"
   },
   {
     id: 7,
     nombre: "Curaco de Vélez",
     latitud: -42.4389,
     longitud: -73.6012,
-    imagen: "assets/img/curaco de velez.jpg",
+    imagen: "assets/img/curaco de velez.jpg"
   },
   {
     id: 8,
     nombre: "Puqueldón",
     latitud: -42.6,
     longitud: -73.6746,
-    imagen: "assets/img/puqueldon.jpg",
+    imagen: "assets/img/puqueldon.jpg"
   },
   {
     id: 9,
     nombre: "Quinchao",
     latitud: -42.5358,
     longitud: -73.427,
-    imagen: "assets/img/quinchao.jpg",
+    imagen: "assets/img/quinchao.jpg"
   },
   {
     id: 10,
     nombre: "Queilén",
     latitud: -42.889,
     longitud: -73.4742,
-    imagen: "assets/img/queilen.jpg",
+    imagen: "assets/img/queilen.jpg"
   },
 ];
 
