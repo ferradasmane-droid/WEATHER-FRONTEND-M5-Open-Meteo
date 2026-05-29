@@ -247,13 +247,12 @@ class WeatherApp {
         <p><strong>Mínima:</strong> ${minima}°C</p>
         <p><strong>Máxima</strong> ${maxima}°C</p>
         <p><strong>Estado:</strong> ${this.obtenerDescripcionClima(codigoClima)}</p>
-      
-
+        
         </div>
        </div>
        </article>
     `;
-      }
+     }
 
       const estadisticas = this.calcularEstadisticas(datosApi);
 
