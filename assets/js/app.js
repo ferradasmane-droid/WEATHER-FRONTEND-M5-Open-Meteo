@@ -193,7 +193,7 @@ class WeatherApp {
          <p class="place-card__temperature fs-3 fw-bold">${lugar.tempActual} °C</p>
          <p><strong>Mínima:</strong> ${lugar.minima}°C</p>
          <p><strong>Máxima:</strong> ${lugar.maxima}°C</p>
-         <P><strong>Estado:</strong> ${this.obtenerDescripcionClima(lugar.codigoClima)}</P> 
+         <p><strong>Estado:</strong> ${this.obtenerDescripcionClima(lugar.codigoClima)}</p> 
          
          <a href="detalle.html?id=${lugar.id}" class="btn btn-primary">
           Ver detalle
