@@ -4,7 +4,7 @@ const lugaresBase = [
     nombre: "Ancud",
     latitud: -41.8697,
     longitud: -73.8203,
-    imagen: "assets/img/chonchi.jpg"
+    imagen: "/assets/img/ancud.jpg"
   },
   {
     id: 2,
