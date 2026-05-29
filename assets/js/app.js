@@ -11,7 +11,7 @@ const lugaresBase = [
     nombre: "Castro",
     latitud: -42.4721,
     longitud: -73.7732,
-    imagen: "assets/img/castro.jpg"
+    imagen: "/assets/img/castro.jpg"
   },
   {
     id: 3,
