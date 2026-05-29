@@ -32,7 +32,7 @@ const lugaresBase = [
     nombre: "Chonchi",
     latitud: -42.6239,
     longitud: -73.775,
-    imagen: "assets/img/Chonchi.jpg"
+    imagen: "/assets/img/Chonchi.jpg"
   },
   {
     id: 6,
