@@ -4,14 +4,14 @@ const lugaresBase = [
     nombre: "Ancud",
     latitud: -41.8697,
     longitud: -73.8203,
-    imagen: "assets/img/ancud.jpg"
+    imagen: "/assets/img/ancud.jpg"
   },
   {
     id: 2,
     nombre: "Castro",
     latitud: -42.4721,
     longitud: -73.7732,
-    imagen: "assets/img/castro.jpg"
+    imagen: "/assets/img/castro.jpg"
   },
   {
     id: 3,
