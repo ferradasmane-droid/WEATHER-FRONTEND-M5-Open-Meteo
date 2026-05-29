@@ -4,7 +4,7 @@ const lugaresBase = [
     nombre: "Ancud",
     latitud: -41.8697,
     longitud: -73.8203,
-    imagen: "assets/img/ancud.jpg",
+    imagen: "/assets/img/chonchi.jpg"
   },
   {
     id: 2,
@@ -247,7 +247,7 @@ class WeatherApp {
         <p><strong>Mínima:</strong> ${minima}°C</p>
         <p><strong>Máxima</strong> ${maxima}°C</p>
         <p><strong>Estado:</strong> ${this.obtenerDescripcionClima(codigoClima)}</p>
-        
+
         </div>
        </div>
        </article>
